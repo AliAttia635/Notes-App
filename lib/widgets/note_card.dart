@@ -7,7 +7,7 @@ class NoteCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: Container(
         padding: EdgeInsets.only(top: 20, bottom: 20, left: 16),
         decoration: BoxDecoration(
@@ -23,20 +23,11 @@ class NoteCard extends StatelessWidget {
               // tileColor: Colors.red,
               textColor: Colors.black,
               iconColor: Colors.black,
-              title: Text(
+              title: const Text(
                 "Flutter tips",
                 style: TextStyle(fontSize: 24),
               ),
-              trailing: IconButton(
-                onPressed: () {},
-                icon: Padding(
-                  padding: const EdgeInsets.only(bottom: 16.0),
-                  child: Icon(
-                    FontAwesomeIcons.trash,
-                    size: 24,
-                  ),
-                ),
-              ),
+
               subtitle: Padding(
                 padding: const EdgeInsets.only(top: 20.0),
                 child: Text(
@@ -44,6 +35,16 @@ class NoteCard extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.black.withOpacity(.6),
+                  ),
+                ),
+              ),
+              trailing: IconButton(
+                onPressed: () {},
+                icon: const Padding(
+                  padding: EdgeInsets.only(bottom: 16.0),
+                  child: Icon(
+                    FontAwesomeIcons.trash,
+                    size: 24,
                   ),
                 ),
               ),

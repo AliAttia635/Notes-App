@@ -8,13 +8,7 @@ class NotesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: NotesViewBody(),
-
-      // body: ListView.builder(
-      //   itemCount: 7,
-      //   itemBuilder: (context, index) {
-      //     return NoteCard();
-      //   },
-      // ),
+      floatingActionButton: CustomFloatingActionButton(),
     );
   }
 }

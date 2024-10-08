@@ -15,6 +15,7 @@ class NotesApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         fontFamily: 'Poppins',
+        colorSchemeSeed: Color.fromARGB(255, 117, 25, 25),
       ),
       home: NotesView(),
     );
