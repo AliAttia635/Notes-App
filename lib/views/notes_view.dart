@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/notes_view_body.dart';
 
-class NotesPage extends StatelessWidget {
-  const NotesPage({super.key});
+class NotesView extends StatelessWidget {
+  const NotesView({super.key});
 
   @override
   Widget build(BuildContext context) {
