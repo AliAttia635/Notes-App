@@ -1,9 +1,14 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:notes_app/widgets/custom_serach_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
+  String title;
+  Widget IconWidget;
   CustomAppBar({
-    super.key,
+    required this.title,
+    required this.IconWidget,
   });
 
   @override
@@ -12,10 +17,10 @@ class CustomAppBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          "Notes",
+          title,
           style: TextStyle(fontSize: 24),
         ),
-        CustomSearchIcon(),
+        IconWidget,
       ],
     );
   }

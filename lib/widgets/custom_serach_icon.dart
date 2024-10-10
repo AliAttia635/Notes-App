@@ -1,8 +1,10 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-class CustomSearchIcon extends StatelessWidget {
-  const CustomSearchIcon({
-    super.key,
+class CustomIcon extends StatelessWidget {
+  IconData icon;
+  CustomIcon({
+    required this.icon,
   });
 
   @override
@@ -15,7 +17,7 @@ class CustomSearchIcon extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Icon(
-        Icons.search,
+        icon,
         size: 26,
       ),
     );
