@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/views/notes_list_view.dart';
+import 'package:notes_app/widgets/notes_list_view.dart';
 import 'package:notes_app/widgets/custom_app_bar.dart';
-import 'package:notes_app/widgets/custom_serach_icon.dart';
+import 'package:notes_app/widgets/custom_icon.dart';
 
 class NotesViewBody extends StatelessWidget {
   const NotesViewBody({
@@ -13,7 +13,7 @@ class NotesViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12.0),
       child: Column(
-        children: [
+        children: const [
           SizedBox(
             height: 40,
           ),

@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 
 class CustomIcon extends StatelessWidget {
-  IconData icon;
-  CustomIcon({
+  final IconData icon;
+  const CustomIcon({
     required this.icon,
   });
 
