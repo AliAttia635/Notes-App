@@ -1,5 +1,5 @@
 {"file_path":"e:\\New Flutter Projects\\notes_app\\test\\widget_test.dart","last_edit":1728384227958,"total_time":15,"is_writing":0,"_id":"1asfbVyQkqnVMkQK"}
-{"file_path":"git\\scm0\\input","last_edit":1728549989852,"total_time":15583627,"is_writing":0,"_id":"2lPpPl7ZHWNjVIVd"}
+{"file_path":"git\\scm0\\input","last_edit":1728816492468,"total_time":18449800,"is_writing":0,"_id":"2lPpPl7ZHWNjVIVd"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\custom_app_bar.dart","last_edit":1728549991127,"total_time":9334018,"is_writing":0,"_id":"4tLubkmvnwixwHqT"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\add_note_bottom_sheet.dart","last_edit":1728410786824,"total_time":991073,"is_writing":0,"_id":"5Q485kv563rTVaqx"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\notes_view_body.dart","last_edit":1728549989329,"total_time":4447282,"is_writing":0,"_id":"5TumZfiAye8OwPg3"}
@@ -12,14 +12,16 @@
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\custom_floating_action_button.dart.git","last_edit":1728408067935,"total_time":14,"is_writing":0,"_id":"MjkzmTvyRUBqRTZ6"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\views\\notes_view_body.dart","last_edit":1728549991116,"total_time":12018079,"is_writing":0,"_id":"NYXhKMRfJJKAk5bw"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\screens\\home_view.dart","last_edit":1728252205335,"total_time":7719100,"is_writing":0,"_id":"PVudFc232kxFki3x"}
-{"file_path":"e:\\New Flutter Projects\\notes_app\\pubspec.yaml","last_edit":1728452605222,"total_time":27065,"is_writing":0,"_id":"QqzjpPQuNsVz36fQ"}
+{"file_path":"e:\\New Flutter Projects\\notes_app\\pubspec.yaml","last_edit":1728660406647,"total_time":137335758,"is_writing":0,"_id":"QqzjpPQuNsVz36fQ"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\views\\notes_view.dart","last_edit":1728548813933,"total_time":11344552,"is_writing":0,"_id":"RZVrkuBYdVKjgubb"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\Button.dart.git","last_edit":1728410877578,"total_time":9,"is_writing":0,"_id":"Rs4UdvI3UyM2d7oa"}
+{"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\models\\note_model.dart","last_edit":1728816773840,"total_time":129012,"is_writing":0,"_id":"TBTvCKdZuiaJACcQ"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\edit_note_body.dart","last_edit":1728549190738,"total_time":70709,"is_writing":0,"_id":"ThUUFWHaehxoJLeX"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\note_card.dart.git","last_edit":1728384331965,"total_time":298079,"is_writing":0,"_id":"Uv3fsETCfL9kYeKG"}
-{"file_path":"extension-output-Dart-Code.dart-code-#2-flutter (notes_app)","last_edit":1728382631924,"total_time":1507,"is_writing":0,"_id":"X0PjJrPWHU0tBtiF"}
+{"file_path":"extension-output-Dart-Code.dart-code-#2-flutter (notes_app)","last_edit":1728660412672,"total_time":6053,"is_writing":0,"_id":"X0PjJrPWHU0tBtiF"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\views\\notes_view_body.dart.git","last_edit":1728544656321,"total_time":10883566,"is_writing":0,"_id":"ZLF9CHX86G970CAd"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\views\\notes_view.dart.git","last_edit":1728398364331,"total_time":3572304,"is_writing":0,"_id":"ZllvYwZFH9SuPMkp"}
+{"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\models\\note_model.dart.git","last_edit":1728564607976,"total_time":6,"is_writing":0,"_id":"adlD4aFVMubpFPNm"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\main.dart.git","last_edit":1728398175032,"total_time":4,"is_writing":0,"_id":"b6qQ2dnxTMvvpIa4"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\note_card.dart","last_edit":1728544743895,"total_time":3839399,"is_writing":0,"_id":"eNbgTCBiizwP8HtC"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\custom_icon.dart","last_edit":1728549989405,"total_time":4083559,"is_writing":0,"_id":"fGUYQ853dghpTpUP"}
@@ -32,6 +34,6 @@
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\custom_icon.dart.git","last_edit":1728549991160,"total_time":5,"is_writing":0,"_id":"swf5kprtZTIb0pJG"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\views\\notes_list_view.dart","last_edit":1728408134265,"total_time":110606,"is_writing":0,"_id":"uJ6UmhttrWmWFlFn"}
 {"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\widgets\\custom_app_bar.dart.git","last_edit":1728264179997,"total_time":26782,"is_writing":0,"_id":"zydXXqVVsGgH789H"}
-{"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\models\\note_model.dart","last_edit":1728564570420,"total_time":48784,"is_writing":0,"_id":"TBTvCKdZuiaJACcQ"}
-{"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\models\\note_model.dart","last_edit":1728564580079,"total_time":53057,"is_writing":0,"_id":"TBTvCKdZuiaJACcQ"}
-{"file_path":"git\\scm0\\input","last_edit":1728564595578,"total_time":15591166,"is_writing":0,"_id":"2lPpPl7ZHWNjVIVd"}
+{"file_path":"e:\\New Flutter Projects\\notes_app\\pubspec.yaml","last_edit":1728817167768,"total_time":137335767,"is_writing":0,"_id":"QqzjpPQuNsVz36fQ"}
+{"file_path":"e:\\New Flutter Projects\\notes_app\\lib\\models\\note_model.dart","last_edit":1728817296142,"total_time":131304,"is_writing":0,"_id":"TBTvCKdZuiaJACcQ"}
+{"file_path":"git\\scm0\\input","last_edit":1728817402120,"total_time":18465611,"is_writing":0,"_id":"2lPpPl7ZHWNjVIVd"}
