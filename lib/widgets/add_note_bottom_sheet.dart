@@ -19,8 +19,7 @@ class AddNoteBottomSheet extends StatelessWidget {
           listener: (context, state) {},
           builder: (context, state) {
             return ModalProgressHUD(
-                // created the isLoading variable in the addNoteCubit class to keep this widget stateless
-                inAsyncCall: AddNoteCubit().isLoading,
+                inAsyncCall: state is AddNoteLoading ? true : false,
                 child: AddNoteForm());
           },
         ),
