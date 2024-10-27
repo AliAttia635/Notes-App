@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:notes_app/cubits/loaded_notes/cubit/load_notes_cubit.dart';
+import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/edit_note_view.dart';
 
 class NoteCard extends StatelessWidget {
-  const NoteCard({super.key});
+  NoteCard({super.key, required this.noteModel});
+  NoteModel noteModel;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +17,10 @@ class NoteCard extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => EditNoteView()),
+            MaterialPageRoute(
+                builder: (context) => EditNoteView(
+                      noteModel: noteModel,
+                    )),
           );
         },
         child: Container(
@@ -31,15 +38,15 @@ class NoteCard extends StatelessWidget {
                 // tileColor: Colors.red,
                 textColor: Colors.black,
                 iconColor: Colors.black,
-                title: const Text(
-                  "Flutter tips",
+                title: Text(
+                  noteModel.title,
                   style: TextStyle(fontSize: 24),
                 ),
 
                 subtitle: Padding(
                   padding: const EdgeInsets.only(top: 20.0),
                   child: Text(
-                    "Build your career with Tharwat samy",
+                    noteModel.content,
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.black.withOpacity(.6),
@@ -48,11 +55,17 @@ class NoteCard extends StatelessWidget {
                 ),
                 trailing: IconButton(
                   onPressed: () {},
-                  icon: const Padding(
+                  icon: Padding(
                     padding: EdgeInsets.only(bottom: 16.0),
-                    child: Icon(
-                      FontAwesomeIcons.trash,
-                      size: 24,
+                    child: IconButton(
+                      onPressed: () {
+                        noteModel.delete();
+                        BlocProvider.of<LoadNotesCubit>(context).loadAllNotes();
+                      },
+                      icon: const Icon(
+                        FontAwesomeIcons.trash,
+                        size: 24,
+                      ),
                     ),
                   ),
                 ),
@@ -62,7 +75,7 @@ class NoteCard extends StatelessWidget {
                 child: Align(
                     alignment: Alignment.centerRight,
                     child: Text(
-                      "12 sept 2021",
+                      noteModel.date,
                       style: TextStyle(
                           color: Colors.black.withOpacity(.6), fontSize: 15),
                     )),

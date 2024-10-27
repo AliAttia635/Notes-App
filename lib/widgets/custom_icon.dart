@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 
 class CustomIcon extends StatelessWidget {
   final IconData icon;
+  final void Function()? onPressed;
   const CustomIcon({
+    this.onPressed,
     required this.icon,
   });
 
@@ -16,9 +18,12 @@ class CustomIcon extends StatelessWidget {
         color: Colors.grey.withOpacity(.25),
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Icon(
-        icon,
-        size: 26,
+      child: IconButton(
+        onPressed: onPressed,
+        icon: Icon(
+          icon,
+          size: 26,
+        ),
       ),
     );
   }

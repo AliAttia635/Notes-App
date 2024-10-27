@@ -4,12 +4,10 @@ import 'package:notes_app/constants.dart';
 class CustomFormTextField extends StatelessWidget {
   String hint;
   final int maxLines;
+  void Function(String)? onChanged;
 
-  CustomFormTextField({
-    required this.hint,
-    this.maxLines = 1,
-    this.onSaved,
-  });
+  CustomFormTextField(
+      {required this.hint, this.maxLines = 1, this.onSaved, this.onChanged});
 
   final void Function(String?)? onSaved;
 
@@ -18,6 +16,7 @@ class CustomFormTextField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16.0),
       child: TextFormField(
+        onChanged: onChanged,
         onSaved: onSaved,
         maxLines: maxLines,
         cursorColor: kPrimaryColor,
