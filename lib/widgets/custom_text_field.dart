@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/constants.dart';
 
 class CustomFormTextField extends StatelessWidget {
-  String hint;
+  final String hint;
   final int maxLines;
-  void Function(String)? onChanged;
+  final void Function(String)? onChanged;
 
-  CustomFormTextField(
-      {required this.hint, this.maxLines = 1, this.onSaved, this.onChanged});
+  const CustomFormTextField(
+      {super.key,
+      required this.hint,
+      this.maxLines = 1,
+      this.onSaved,
+      this.onChanged});
 
   final void Function(String?)? onSaved;
 
@@ -28,20 +32,20 @@ class CustomFormTextField extends StatelessWidget {
         },
         decoration: InputDecoration(
           hintText: hint,
-          hintStyle: TextStyle(
+          hintStyle: const TextStyle(
             color: kPrimaryColor,
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: Colors.white),
+            borderSide: const BorderSide(color: Colors.white),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: kPrimaryColor),
+            borderSide: const BorderSide(color: kPrimaryColor),
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: BorderSide(color: kPrimaryColor),
+            borderSide: const BorderSide(color: kPrimaryColor),
           ),
         ),
       ),

@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/widgets/Button.dart';
+import 'package:notes_app/widgets/color_item.dart';
+import 'package:notes_app/widgets/color_item_list_view.dart';
 import 'package:notes_app/widgets/custom_text_field.dart';
 
 class AddNoteForm extends StatefulWidget {
@@ -38,6 +40,13 @@ class _AddNoteFormState extends State<AddNoteForm> {
               sunTitle = data;
             },
           ),
+          const SizedBox(
+            height: 8,
+          ),
+          ColorItemListView(),
+          const SizedBox(
+            height: 22,
+          ),
           CustomButton(
             text: 'Add',
             ontap: () {
@@ -49,9 +58,6 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     date: DateTime.now().toString(),
                     color: 3);
                 BlocProvider.of<AddNoteCubit>(context).addNote(noteModel);
-              } else {
-                //autovalidateMode = AutovalidateMode.always;
-                setState(() {});
               }
             },
           ),

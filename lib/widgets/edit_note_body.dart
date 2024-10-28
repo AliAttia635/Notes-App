@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_app/cubits/loaded_notes/cubit/load_notes_cubit.dart';
 import 'package:notes_app/models/note_model.dart';
-import 'package:notes_app/widgets/Button.dart';
 import 'package:notes_app/widgets/custom_app_bar.dart';
 import 'package:notes_app/widgets/custom_icon.dart';
 import 'package:notes_app/widgets/custom_text_field.dart';
@@ -18,12 +17,12 @@ class EditNoteBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12.0),
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           CustomAppBar(
             title: "Edit Note",
-            IconWidget: CustomIcon(
+            iconWidget: CustomIcon(
               icon: Icons.done,
               onPressed: () {
                 noteModel!.title = title ?? noteModel!.title;
@@ -34,7 +33,7 @@ class EditNoteBody extends StatelessWidget {
               },
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           CustomFormTextField(

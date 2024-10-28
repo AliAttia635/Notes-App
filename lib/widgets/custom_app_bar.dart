@@ -1,14 +1,13 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import 'package:notes_app/widgets/custom_icon.dart';
-
 class CustomAppBar extends StatelessWidget {
   final String title;
-  final Widget IconWidget;
+  final Widget iconWidget;
   const CustomAppBar({
+    super.key,
     required this.title,
-    required this.IconWidget,
+    required this.iconWidget,
   });
 
   @override
@@ -18,9 +17,9 @@ class CustomAppBar extends StatelessWidget {
       children: [
         Text(
           title,
-          style: TextStyle(fontSize: 24),
+          style: const TextStyle(fontSize: 24),
         ),
-        IconWidget,
+        iconWidget,
       ],
     );
   }

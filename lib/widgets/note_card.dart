@@ -6,8 +6,8 @@ import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/edit_note_view.dart';
 
 class NoteCard extends StatelessWidget {
-  NoteCard({super.key, required this.noteModel});
-  NoteModel noteModel;
+  const NoteCard({super.key, required this.noteModel});
+  final NoteModel noteModel;
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +24,9 @@ class NoteCard extends StatelessWidget {
           );
         },
         child: Container(
-          padding: EdgeInsets.only(top: 20, bottom: 20, left: 16),
+          padding: const EdgeInsets.only(top: 20, bottom: 20, left: 16),
           decoration: BoxDecoration(
-            color: Colors.orangeAccent,
+            color: Colors.amber,
             borderRadius: BorderRadius.circular(12),
           ),
           child: Column(
@@ -40,7 +40,7 @@ class NoteCard extends StatelessWidget {
                 iconColor: Colors.black,
                 title: Text(
                   noteModel.title,
-                  style: TextStyle(fontSize: 24),
+                  style: const TextStyle(fontSize: 24),
                 ),
 
                 subtitle: Padding(
@@ -56,7 +56,7 @@ class NoteCard extends StatelessWidget {
                 trailing: IconButton(
                   onPressed: () {},
                   icon: Padding(
-                    padding: EdgeInsets.only(bottom: 16.0),
+                    padding: const EdgeInsets.only(bottom: 16.0),
                     child: IconButton(
                       onPressed: () {
                         noteModel.delete();

@@ -10,8 +10,8 @@ class NotesViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 12.0),
       child: Column(
         children: const [
           SizedBox(
@@ -19,7 +19,7 @@ class NotesViewBody extends StatelessWidget {
           ),
           CustomAppBar(
             title: "Notes",
-            IconWidget: CustomIcon(
+            iconWidget: CustomIcon(
               icon: Icons.search,
             ),
           ),
