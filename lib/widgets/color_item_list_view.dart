@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notes_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:notes_app/widgets/color_item.dart';
 
 List<Color> colorsList = const [
@@ -14,19 +16,16 @@ List<Color> colorsList = const [
   Color(0xffEEF5DB)
 ];
 
-int selectedIndex = 0; // Track the index of the currently selected color
-
-Color selectedColor = colorsList[0];
-
 class ColorItemListView extends StatefulWidget {
   ColorItemListView({super.key});
   // static Color pickedColor = colorsList[selectedIndex];
-  int colorValue = selectedColor.value;
   @override
   State<ColorItemListView> createState() => _ColorItemListViewState();
 }
 
 class _ColorItemListViewState extends State<ColorItemListView> {
+  int selectedIndex = 0; // Track the index of the currently selected color
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -41,7 +40,8 @@ class _ColorItemListViewState extends State<ColorItemListView> {
               onTap: () {
                 selectedIndex =
                     index; // Update selectedIndex to the tapped color's index
-                selectedColor = colorsList[index];
+                BlocProvider.of<AddNoteCubit>(context).selectedColor =
+                    colorsList[index];
                 setState(() {});
               },
               child: ColorItem(
