@@ -14,7 +14,15 @@ class EditColorsListView extends StatefulWidget {
 }
 
 class _EditColorsListViewState extends State<EditColorsListView> {
-  int selectedIndex = 55; // Track the index of the currently selected color
+  late int selectedIndex; // Track the index of the currently selected color
+  @override
+  void initState() {
+    selectedIndex = colorsList.indexOf(
+      Color(widget.noteModel.color),
+    );
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -36,13 +44,10 @@ class _EditColorsListViewState extends State<EditColorsListView> {
                 );
               },
               child: ColorItem(
-                color: colorsList[index],
-                isPicked: selectedIndex == index
-                    ? true
-                    : colorsList[index] ==
-                        Color(widget.noteModel
-                            .color), // Only show as picked if it’s the selected index
-              ),
+                  color: colorsList[index],
+                  isPicked: selectedIndex ==
+                      index // Only show as picked if it’s the selected index
+                  ),
             ),
           );
         },
